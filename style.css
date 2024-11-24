@@ -1,0 +1,184 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(223, 234, 255);
+}
+
+header{
+    width: 100%;
+    background-color: rgb(56, 56, 161);
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    color: #fff;
+    align-items: center;
+}
+
+header h1{
+    cursor: pointer;
+}
+ul{
+    display:flex;
+    padding: 0 50px;
+}
+ul li {
+    list-style: none;
+    padding: 0 7px;
+    cursor:pointer
+}
+section{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section h1{
+    margin: 50px auto;
+    text-align: start;
+    color:rgb(56, 56, 161);
+    padding: 20px;
+}
+
+.sobre-Loja{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sobre-Loja img {
+    padding: 10px;
+    height: 300px;
+}
+.sobre-Loja p{
+    
+    padding: 20px;
+    color:  rgb(56, 56, 161);    
+}
+.textos > h2{
+    color:  rgb(56, 56, 161);    
+    text-align:end;
+    padding:  0 50px;
+
+}
+
+.container-noticia{
+    margin:30px 0;
+}
+
+section h2{
+    color:  rgb(56, 56, 161);    
+    text-align:initial;
+    padding: 20px;
+}
+
+.container-noticia{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    column-gap: 5%;
+    padding: 0 5%;
+
+}
+article img {
+    width: 100%;
+}
+
+article h3{
+    border-bottom: 3px solid ;
+    color:  rgb(56, 56, 161); 
+    margin-bottom: 20px;
+}
+
+article p{
+    color:  rgb(56, 56, 161); 
+    margin-bottom: 20px;
+}
+
+button{
+    color: #fff;
+    background-color: rgb(56, 56, 161);
+    padding: 10px;
+    width: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 641px) {
+    section{
+        margin: none;
+    }
+    header li{
+        display: flex;
+    justify-content: space-between;
+        font-size:16px;
+    }
+
+    .sobre-Loja{
+        display: block;
+    }
+    .sobre-Loja img{
+        width: 100%;
+        padding:10%;
+    }
+    .sobre-Loja h2{
+        text-align: center;
+    }
+
+    .container-noticia{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        column-gap: 5%;
+        padding: 10%;
+    
+    }
+
+    button{
+        margin-bottom: 35px;
+    }
+
+}
+
+@media screen and (orientation:landscape){
+    .container-noticia{
+        row-gap: 25px;
+    
+    }
+}
+
+@media screen and (max-width: 425px){
+    section{
+        margin: none;
+    }
+
+    header{
+        display: flex;
+    }
+
+    header h1{
+        
+        font-size:24px;
+    }
+
+    header li{
+        
+        font-size:14px;
+    }
+
+    .container-noticia{
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        padding: 10%;
+    }
+
+    .sobre-Loja img{
+        width: 100%;
+        padding:10%;
+    }
+    
+
+    button{
+        margin-bottom: 35px;
+    }
+}
